@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>   
+    <meta charset="UTF-8">
+    <title>TP5</title> 
+    <link rel="stylesheet" href="../css/estilo.css">
+    <meta name="Tp5 title" content="Tp5 description">
+    <meta name="viewport" content="width=width-device,initial-scale=1.0">
+</head> 
+
+<body>
+    <nav id="saltos">
+        <ul>
+            <li><a href="#form2">Ir al Contenido</a></li>
+            <li><a href="#contenedor-menu">Ir a Navegación</a></li>
+        </ul>    
+    </nav>
+
+    <header>
+        <figure>
+            <img src="../img/headerimg.png" alt="logo de valorant, una V roja">
+        </figure>
+        <h1>VALORANT</h1>
+    </header>
+
+    <section id="contenedor-menu">
+        <a href="#contenedor-menu"><img src="../img/burger_menu.png" alt="Abrir Menu" id="abrir"></a>
+        <a href="#"><img src="../img/cerrar_menu.png" alt="Cerrar Menu" id="cerrar"></a>
+
+        <nav>
+            <ul id="contenedor-enlaces">
+                <li><a href="../index.html">Columnas</a></li>
+                <li><a href="tabla.html">Tablas</a> </li>
+                <li><a href="galería.html">Galería</a> </li>
+                <li><a href="#">Formulario</a> </li>
+            </ul>
+        </nav>
+    </section>
+
+    <main>
+        <section class="s2">
+            <form action="" method="" id="form2">    
+            <fieldset>
+                <legend id="contenido">¿Quieres recibir noticias de VALORANT en tu casilla de correo?</legend>
+                <label for="nombre">Nombre:
+                    <input type="text" id="nombre" name="nom" placeholder="Ingrese su nombre" required maxlength="50" required>
+                </label>
+                
+                <label for="mail">E-Mail:
+                    <input type="email" id="mail" name="mails" placeholder="Ingrese su casilla de mail" required>
+                </label>    
+
+                <label for="cali">Califícanos del 1 al 5!
+                    <input type="range" name="calificacion" id="cali" step="1" min="1" max="5">
+                </label> 
+
+                <br>
+                <label for="op">Déjanos una reseña
+                    <textarea cols="30" rows="5" id="op">                         
+                    </textarea>
+                </label>
+                <input type="submit" value="Enviar" id="sent">
+            </fieldset>        
+        </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© Copyright</p>
+        <a href="mailto:santiago991007@gmail.com"> >> Enlace a Correo << </a>
+    </footer>
+
+</body>    

@@ -1,0 +1,538 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#saltos{
+    display: flex;
+    flex-direction: row;
+    padding: 1vw;
+    justify-content: center;
+    background-color: #0f1923;
+}
+
+#saltos a{
+    color: #fe4356;
+    font-family: monospace;
+    font-size: 1.4em;
+}
+
+#saltos ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#saltos li{
+    text-decoration: none;
+    padding: 0.2em;
+}
+
+#saltos ul a{
+    text-decoration: none;
+    padding: 0.5em;
+    background-color:#0f1923;
+    border:0.1em double white;
+    color:#fe4356;
+}
+
+#saltos a:hover, nav a:focus {
+    background-color:white;
+    color:#000000;
+}
+
+header{
+    padding:1em;
+    background-color: #0f1923;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header figure{
+    width: 3em;
+    padding-right: 0.5em;
+}
+
+header img{
+    width: 100%;
+}
+
+header h1{
+    color: #fe4356;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    font-family: arial,georgia,sans-serif;
+    font-weight: 500;
+}
+
+h2, h3, p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2, h3{
+    padding-bottom: 1em ;
+}
+
+#img0{
+    width: 50%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+article figure{
+    width: 50%;
+}
+
+article img{
+    width: 100%;
+}
+
+figcaption{
+    color: rgba(0, 0, 0, 0.562);
+    padding-bottom: 1em;
+}
+
+.s2{
+    background: url(../img/col0.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 470px;
+    width: 100%;
+}
+
+.secgal{
+    background: url(../img/col0.png) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.secgal h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 2em;
+    background-color: #0f19236c;
+}
+
+.gal{
+    background-color: #0f192386;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #0f192394;
+    color: white;
+    margin: 1em;
+    width: 20%;
+    height: 40%;
+}
+
+.figgal{
+    width: 100%;
+    height: 100%;
+}
+
+#st{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.397);
+    height: 470px;
+    text-align: center;
+}
+
+
+footer{
+    background-color:#0f1923;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: monospace;
+    padding:1em;
+    color: white;
+}
+
+footer a{
+    color:#fe4356;
+    text-decoration: none;
+}
+
+
+
+/* ------   CELULAR   ------ */
+
+       /* MENU -1024px */  
+
+
+@media all  and (max-width: 1024px){
+   
+    #contenedor-menu img {
+        width: 10vw;
+    }
+
+    #contenedor-menu #cerrar{
+        display: none;
+    }
+
+    #contenedor-menu #contenedor-enlaces{
+        height:0;
+        transition: height 0.5s ease;
+        overflow: hidden;
+    }
+
+    #contenedor-menu:target #abrir{
+        display: none;
+    }
+
+    #contenedor-menu:target #cerrar{
+        display: block;
+    }
+
+    #contenedor-menu:target #contenedor-enlaces{
+        height: 40vh;
+        transition: height 0.5s ease;
+    }
+
+    #contenedor-enlaces a{
+        display:block;
+        width: 100%;
+        margin-bottom: 0.25em;
+        margin-top: 0.25em;
+        text-decoration: none;
+        background-color: #0f1923;
+        padding: 1em;
+        color: white;
+        font-family: monospace;
+        font-size: 1.2em;
+    }
+
+    #contenedor-menu{
+        background-color: #fe4356;
+    }
+
+    #saltos ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 0.5em;
+    }
+
+    #saltos a{
+        font-size: 1.2em;
+    }
+}  
+
+
+/* MENU +1024px */  
+
+
+@media all and (min-width: 1024px){
+    #abrir, #cerrar{
+        display: none;
+    }
+
+    #contenedor-menu{
+        background-color: #fe4356;
+    }
+
+    #contenedor-menu #contenedor-enlaces{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+    }
+
+    #contenedor-menu #contenedor-enlaces a:hover,
+    #contenedor-menu #contenedor-enlaces a:focus {
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+
+    #contenedor-enlaces a{
+        display:block;
+        margin-bottom: 0.25em;
+        margin-top: 0.25em;
+        text-decoration: none;
+        background-color: #0f1923;
+        padding: 1em;
+        color: white;
+        font-family: monospace;
+        font-size: 1.4em;
+    }
+
+    #contenedor-menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }    
+
+    #contenedor-menu li{
+        width: 100%;
+        text-align: center;
+    }    
+}
+
+/* COLUMNAS */
+
+
+@media all and (min-width: 360px) and (max-width: 767px){
+    .columnas{
+        column-count: 1;
+        column-gap:15%;
+        column-width:30%;
+        column-rule: 0.4em dashed #fe4356;
+    }
+} 
+
+@media all and (min-width: 768px) and (max-width: 1023px){
+    .columnas{
+        column-count: 2;
+        column-gap:15%;
+        column-width:30%;
+        column-rule: 0.4em dashed #fe4356;
+    }
+}
+
+@media all and (min-width: 1024px){
+    .columnas{
+        column-count: 3;
+        column-gap:15%;
+        column-width:30%;
+        column-rule: 0.4em dashed #fe4356;
+    }
+}
+
+
+/* TABLAS */
+
+table{
+    background-color: #0f192383; 
+    border:0.2em solid #ffffff48;
+    border-collapse: collapse;
+    font-family: monospace;
+    font-size: 1.2em;
+    margin: 0 auto;
+    color: white;
+}
+
+td{
+    border:0.2em solid #ffffff48;
+    padding:1.1em;
+}
+
+th{
+    border:0.2em solid #ffffff48;
+}
+
+tr{
+    border:0.2em solid #ffffff48;
+}
+
+table ul{
+    padding-left: 0.2em;
+}
+
+thead{
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+caption{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    border-bottom: 0em;
+    font-family: monospace;
+}
+
+th:hover{
+    background-color: white;
+    color: black;
+}
+
+td:hover{
+    background-color: white;
+    color: black;
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+    table{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.3em;
+        background-color: #0f192383; 
+        border:0.2em solid #ffffff48;
+        border-collapse: collapse;
+        font-family: monospace;
+        font-size: 1.2em;
+        margin: 0 auto;
+        color: white;
+    }
+    
+    tr{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.7em;
+        box-shadow: 0em 0.1em 0.1em black;
+        border: solid red 1px;
+    }
+
+    table td{
+        padding: 0.3em;
+        border-right: 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tabletitle{
+        display: none;
+    }
+    
+
+}
+
+
+
+/*GALERÍA*/
+
+@media all and (min-width: 360px) and (max-width: 767px){
+    .gal{
+        width: 90%;
+    } 
+}
+
+@media all and (min-width: 767px) and (max-width: 1023px){
+    .gal{
+        width: 40%;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1439px){
+    .gal{
+        width: 30%;
+    }
+}
+
+@media all and (min-width: 1440px){
+
+}
+
+/*FORMULARIO*/
+
+form{
+    margin: 0 auto;
+    color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5em;
+    font-family: monospace;
+    font-size: 1.5em;
+    background-color: #0f192383; 
+    border:0.2em solid #ffffff48;
+}   
+
+form fieldset{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainf{
+    width: 80%;
+}
+
+legend{
+    text-align: center;
+}
+
+#legend2{
+    padding-top: 2em;
+    text-align: left;
+}
+
+
+#sent{
+    height: 3em;
+    background-color:#0f1923a1;
+    border: 1px solid white;
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+textarea{
+    resize: none; 
+}
+
+input{
+    font-size: 0.8em;
+}
+
+
+label{
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding:0.5em;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+    form{
+        width:90%;
+        height: 90%;
+        margin:0 auto;
+        padding: 0.5em;
+    }
+
+    label,input{
+        display: block;
+    }
+
+    
+    table{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.3em;
+    }
+    
+    tr{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.7em;
+        box-shadow: 0em 0.1em 0.1em black;
+        border: solid red 1px;
+    }
+
+    table td{
+        padding: 0.3em;
+        border-right: 0;
+    }
+
+    .tabletitle{
+        display: none;
+    }
+    
+    td:nth-of-type(1):before {
+        content: "Título 1";
+    }
+    
+}
+
